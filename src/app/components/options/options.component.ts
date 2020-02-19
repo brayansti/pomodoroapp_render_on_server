@@ -11,7 +11,7 @@ export class OptionsComponent implements OnInit {
   @Output() ouputOptions = new EventEmitter();
   @Output() ouputHamburguer = new EventEmitter();
 
-  options:object = {
+  options = {
     optionvalueHour : 20,
     optionshortBreak : 5,
     optionlongBreak : 15,

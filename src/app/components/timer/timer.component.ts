@@ -12,7 +12,7 @@ export class TimerComponent implements OnInit, OnDestroy, OnChanges {
 
   @Input() m: number;
   @Input() s: number;
-  newOptions: Object;
+  newOptions;
   // tslint:disable-next-line:no-output-on-prefix
   @Output() onComplete: EventEmitter<any> = new EventEmitter();
   showPause:boolean = true;

@@ -19,7 +19,7 @@ import { TimerComponent } from './components/timer/timer.component';
     TimerComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
