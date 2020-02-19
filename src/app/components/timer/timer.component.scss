@@ -1,0 +1,18 @@
+@import '../../../scss/main.scss';
+
+.timerComponent{
+    padding: 20px;
+    &__controls{
+        display: flex;
+        justify-content: center;
+    }
+    &__rounds{
+        margin-top: 10px;
+        text-align: center;
+        p{
+            padding: 10px;
+            display: inline-block;
+            background-color: $lBlack;
+        }
+    }
+}

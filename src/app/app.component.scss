@@ -1,0 +1,51 @@
+@import '../scss/main.scss';
+@import '../styles.scss';
+
+.mainApp{
+    min-height: 100vh;
+    color: $white;
+    margin: 0 auto;
+    // background-color: $pomodoro-1;
+    background-color: #283233;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container{
+        width: 100%;
+        max-width: 400px;
+        min-height: 559px;
+        position: relative;
+        overflow: auto;
+        border-radius: 10px;
+        // @media #{$mediaMobile}{
+        //     border: none;
+        // }
+    }
+}
+app-options{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    @include transition();
+    &.active{
+        left: 0;
+    }
+}
+.clockContainer{
+    width: 100%;
+    margin-top: 7%;
+    @media #{$mediaMobile}{
+        margin-top: 15%;
+    }
+    &__all{
+
+    }
+    &__circle{
+        text-align: center;
+    }
+    &__timer{
+
+    }
+}

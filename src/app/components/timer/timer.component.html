@@ -1,0 +1,18 @@
+<div class="timerComponent">
+  <!-- <h2 class="display-1"> {{timing[0] < 10 ? 0 : ''}}{{timing[0]}} : {{timing[1] < 10 ? 0 : ''}}{{timing[1]}} </h2>
+  <p> {{currentTimerOnClock}} </p> -->
+  <div class="timerComponent__controls">
+    <button *ngIf="!showPause" type="button" class="btn btn--white btn--circle" (click)="startTimer(); clickButton()">
+      <mat-icon aria-hidden="false" aria-label="Start">play_arrow</mat-icon>
+    </button>
+    <button *ngIf="showPause" type="button" class="btn btn--white btn--circle" (click)="stopTimer(); clickButton()">
+      <mat-icon aria-hidden="false" aria-label="Pause">pause</mat-icon>
+    </button>
+  </div>
+  <div class="timerComponent__rounds" *ngIf="newOptions">
+    <p (click)="playAudio('long.mp3')">
+      {{currentRound}} / {{newOptions.optionrounds}}
+    </p>
+    <audio class="hidden" controls id="audioTag" src="../../../assets/sounds/{{audioFileName}}"></audio>
+  </div>
+</div>
